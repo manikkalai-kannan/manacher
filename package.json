@@ -1,0 +1,38 @@
+{
+  "name": "manacher",
+  "version": "0.0.0-development",
+  "description": "Manacher's algorithm to find longest palindrome in a string.",
+  "bugs": {
+    "url": "https://github.com/josephting/manacher/issues"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src/index.js -d dist",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "semantic-release": "semantic-release"
+  },
+  "keywords": [
+    "manacher",
+    "palindrome"
+  ],
+  "author": "Joseph Ting",
+  "license": "MIT",
+  "homepage": "https://github.com/josephting/manacher#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephting/manacher.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.12.0",
+    "eslint-plugin-jest": "^22.1.3",
+    "jest": "^23.6.0",
+    "semantic-release": "^15.13.3"
+  }
+}
