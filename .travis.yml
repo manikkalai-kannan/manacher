@@ -15,7 +15,10 @@ install:
   - travis_retry npm install
 
 script:
-  - npm run test
+  - npm run test:coverage
+
+after_success:
+  - npm run codecov
 
 jobs:
   include:
