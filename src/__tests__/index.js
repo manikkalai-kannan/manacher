@@ -79,14 +79,8 @@ describe('linearExpansion()', () => {
 
   it('should copy palindrome string length', () => {
     let result = linearExpansion(3, 5, 4, [0, 0, 3, 0, 0, 0, 0])
-    expect(result[1][4]).toBe(2)
+    expect(result[1][4]).toBe(0)
     expect(result[0]).toBe(3)
-  })
-
-  it('should copy palindrome string length and set center', () => {
-    let result = linearExpansion(3, 5, 5, [0, 0, 3, 0, 0, 0, 0])
-    expect(result[1][4]).toBe(3)
-    expect(result[0]).toBe(4)
   })
 })
 
@@ -107,6 +101,7 @@ describe('longestPalindrome()', () => {
 
   it('should return correct answer', () => {
     expect(longestPalindrome('racecar')).toBe('racecar')
-    expect(longestPalindrome('babcbabcbac')).toBe('babcbab')
+    expect(longestPalindrome('babcbabcbac')).toBe('abcbabcba')
+    expect(longestPalindrome('43343321')).toBe('33433')
   })
 })

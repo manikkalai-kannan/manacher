@@ -20,7 +20,7 @@ const isSymmetric = function(left, leftEdge, right, rightEdge, text) {
 
 const linearExpansion = function(center, right, adjRight, lps) {
   for (let i = 1; i < right - center; i++) {
-    let edgeDistance = adjRight - (center - i)
+    let edgeDistance = adjRight - (center + i)
 
     if (lps[center - i] < edgeDistance) {
       lps[center + i] = lps[center - i]
